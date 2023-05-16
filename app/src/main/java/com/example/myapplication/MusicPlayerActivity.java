@@ -17,5 +17,16 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
     MediaPlayer musicPlayer;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-}
+        // hide the actionbar
+        getSupportActionBar().hide();
+
+        tvTime = findViewById(R.id.tvTime);
+        tvDuration = findViewById(R.id.tvDuration);
+        seekBarTime = findViewById(R.id.seekBarTime);
+        seekBarVolume = findViewById(R.id.seekBarVolume);
+        btnPlay = findViewById(R.id.btnPlay);
