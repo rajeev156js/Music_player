@@ -72,6 +72,17 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
                 }
             }
 
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
 
 
 }// main music player activity branch end
