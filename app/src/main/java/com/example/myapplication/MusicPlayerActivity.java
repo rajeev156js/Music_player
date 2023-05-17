@@ -62,6 +62,16 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
             }
         });
 
+        seekBarTime.setMax(musicPlayer.getDuration());
+        seekBarTime.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean isFromUser) {
+                if(isFromUser) {
+                    musicPlayer.seekTo(progress);
+                    seekBar.setProgress(progress);
+                }
+            }
+
 
 
 }// main music player activity branch end
