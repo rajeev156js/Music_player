@@ -44,6 +44,24 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
         seekBarVolume.setProgress(50);
 
+        seekBarVolume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean isFromUser) {
+                float volume = progress / 100f;
+                musicPlayer.setVolume(volume,volume);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
 
 
 }// main music player activity branch end
