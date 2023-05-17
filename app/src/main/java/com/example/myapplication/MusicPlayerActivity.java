@@ -30,3 +30,16 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
         seekBarTime = findViewById(R.id.seekBarTime);
         seekBarVolume = findViewById(R.id.seekBarVolume);
         btnPlay = findViewById(R.id.btnPlay);
+
+        musicPlayer = MediaPlayer.create(this, R.raw.free_sound);
+        musicPlayer.setLooping(true);
+        musicPlayer.seekTo(0);
+        musicPlayer.setVolume(0.5f, 0.5f);
+
+        String duration = millisecondsToString(musicPlayer.getDuration());
+        tvDuration.setText(duration);
+
+        btnPlay.setOnClickListener(this);
+
+        seekBarVolume.setProgress(50);
+    }}
