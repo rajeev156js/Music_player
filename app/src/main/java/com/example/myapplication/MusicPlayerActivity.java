@@ -17,6 +17,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
     MediaPlayer musicPlayer;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,4 +43,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
         btnPlay.setOnClickListener(this);
 
         seekBarVolume.setProgress(50);
-    }}
+
+
+
+}// main music player activity branch end
