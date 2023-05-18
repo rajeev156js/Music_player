@@ -120,6 +120,14 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
         return  elapsedTime;
     }
+    @Override
+    public void onClick(View view) {
+        if(view.getId() == R.id.btnPlay) {
+            if(musicPlayer.isPlaying()) {
+                // is playing
+                musicPlayer.pause();
+                btnPlay.setBackgroundResource(R.drawable.ic_play);
+            }
 
 
 }// main music player activity branch end
