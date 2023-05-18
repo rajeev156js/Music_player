@@ -127,7 +127,13 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
                 // is playing
                 musicPlayer.pause();
                 btnPlay.setBackgroundResource(R.drawable.ic_play);
+            } else {
+                // on pause
+                musicPlayer.start();
+                btnPlay.setBackgroundResource(R.drawable.ic_pause);
             }
+        }
+    }
 
 
 }// main music player activity branch end
