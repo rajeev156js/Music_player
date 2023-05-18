@@ -9,6 +9,25 @@
     android:padding="16dp"
     tools:context=".MusicPlayerActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Someone like you"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Adele"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
