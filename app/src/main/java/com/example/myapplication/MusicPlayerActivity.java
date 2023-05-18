@@ -108,7 +108,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
     } // end main
 
-
     public String millisecondsToString(int time) {
         String elapsedTime = "";
         int minutes = time / 1000 / 60;
