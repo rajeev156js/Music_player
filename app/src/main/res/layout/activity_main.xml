@@ -51,7 +51,10 @@
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
-
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_volume_down" />
 
         <SeekBar
             android:id="@+id/seekBarVolume"
@@ -60,5 +63,10 @@
             android:backgroundTint="#fff"
             android:progressTint="#fff"
             android:thumbTint="#fff" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_volume_up" />
     </LinearLayout>
 
