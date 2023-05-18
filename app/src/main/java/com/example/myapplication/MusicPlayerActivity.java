@@ -85,4 +85,33 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
 
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (musicPlayer != null) {
+                    if(musicPlayer.isPlaying()) {
+                        try {
+                            final double current = musicPlayer.getCurrentPosition();
+                            final String elapsedTime = millisecondsToString((int) current);
+
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    tvTime.setText(elapsedTime);
+                                    seekBarTime.setProgress((int) current);
+                                }
+                            });
+
+                            Thread.sleep(1000);
+                        }catch (InterruptedException e) {}
+                    }
+                }
+            }
+        }).start();
+
+    } // end main
+
+
+
+
 }// main music player activity branch end
