@@ -17,7 +17,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
     MediaPlayer musicPlayer;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,8 +81,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
             }
         });
-
-
 
         new Thread(new Runnable() {
             @Override
